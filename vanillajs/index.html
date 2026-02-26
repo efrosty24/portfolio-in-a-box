@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="logo">YN</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <p class="eyebrow">Hi, I'm</p>
+    <h1>Your Name</h1>
+    <p class="subtitle">Frontend Engineer &amp; Designer based in San Francisco, CA.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm a developer and designer passionate about building things that matter. I live at the intersection of clean code and thoughtful design — always chasing the right balance between form and function.</p>
+          <p style="margin-top:12px;">Based in <strong>San Francisco, CA</strong>, I've spent the last several years shipping products that people actually enjoy using.</p>
+          <div class="tags" style="margin-top:20px;">
+            <span>JavaScript</span><span>React</span><span>Node.js</span>
+            <span>TypeScript</span><span>CSS</span><span>Firebase</span>
+          </div>
+        </div>
+        <div>
+          <h3>Outside of work</h3>
+          <ul class="hobbies">
+            <li>📷 <strong>Film Photography</strong> — Shoot on a vintage Pentax, develop my own rolls.</li>
+            <li>🧗 <strong>Rock Climbing</strong> — Bouldering 3× a week. Problem-solving in physical form.</li>
+            <li>📚 <strong>Reading</strong> — Philosophy, design theory, and the occasional sci-fi novel.</li>
+            <li>🎸 <strong>Guitar</strong> — Self-taught, imperfect, and totally obsessed with indie folk.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section-alt">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+
+        <div class="job">
+          <div class="job-meta">
+            <span class="job-title">Software Guy</span>
+            <span class="job-date">2022 — Present</span>
+          </div>
+          <p class="job-company">The Company</p>
+          <p>worker here</p>
+          <div class="tags"><span>React</span><span>TypeScript</span><span>GraphQL</span></div>
+        </div>
+
+        <div class="job">
+          <div class="job-meta">
+            <span class="job-title">Boss Guy</span>
+            <span class="job-date">2020 — 2022</span>
+          </div>
+          <p class="job-company">StartupXYZ</p>
+          <p>Built and shipped 5 major product features from concept to production. Established the company's design system used across all products.</p>
+          <div class="tags"><span>Vue.js</span><span>Sass</span><span>Node.js</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <article class="card">
+          <h3>Project Alpha</h3>
+          <p>A cool project</p>
+          <div class="tags"><span>React</span><span>Firebase</span><span>OpenAI</span></div>
+          <div class="card-links"><a href="#">Live ↗</a><a href="#">GitHub ↗</a></div>
+        </article>
+
+        <article class="card">
+          <h3>Project Beta</h3>
+          <p>Some stuff</p>
+          <div class="tags"><span>Node.js</span><span>TypeScript</span><span>Shell</span></div>
+          <div class="card-links"><a href="#">NPM ↗</a><a href="#">GitHub ↗</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-alt">
+    <div class="container contact-container">
+      <h2>Get in Touch</h2>
+      <p>Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="success-msg" id="successMsg">Thanks! I'll be in touch soon.</p>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:hello@yourname.com">Email ↗</a>
+        <a href="#">GitHub ↗</a>
+        <a href="#">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Made with care.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
