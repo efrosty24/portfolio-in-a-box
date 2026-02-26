@@ -1,26 +1,39 @@
+import { ProjectsList } from "../components/ProjectsList";
+import type { ProjectDetail } from "../components/ProjectModal";
+
 export const metadata = {
   title: "Projects",
   description: "Projects and work",
 };
 
-const projects = [
+const projects: ProjectDetail[] = [
   {
     title: "Project One",
     description: "A short description of the project and what it does.",
+    longDescription:
+      "A longer overview of the project: the problem it solves, your role, and the impact. You can describe the architecture, key features, and what you learned. This gives visitors a clear picture before they follow links to the live site or source code.",
     tags: ["Next.js", "TypeScript", "Design"],
     href: "#",
+    liveUrl: "https://example.com",
+    repoUrl: "https://github.com",
   },
   {
     title: "Project Two",
     description: "Another project with tech stack and impact.",
+    longDescription:
+      "Expand on the tech stack, API design, and open-source contributions. Share metrics or outcomes if relevant.",
     tags: ["React", "API", "Open Source"],
     href: "#",
+    liveUrl: "https://example.com",
   },
   {
     title: "Project Three",
     description: "Brief summary and link to live or repo.",
+    longDescription:
+      "Details on Web3 integration, smart contracts, and why you chose Rust for this project.",
     tags: ["Web3", "Smart Contracts", "Rust"],
     href: "#",
+    repoUrl: "https://github.com",
   },
 ];
 
@@ -36,33 +49,7 @@ export default function ProjectsPage() {
       <p className="mt-4 text-lg text-[var(--muted)]">
         Side projects and things I&apos;ve shipped.
       </p>
-      <ul className="mt-12 grid gap-6">
-        {projects.map((project, i) => (
-          <li key={i}>
-            <a
-              href={project.href}
-              className="group block rounded-2xl border-2 border-[var(--card-border)] bg-[var(--card-bg)] p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-[var(--accent)]/50 hover:shadow-lg md:p-8"
-            >
-              <h2 className="font-serif text-xl font-normal text-[var(--foreground)] transition group-hover:text-[var(--accent)]">
-                {project.title}
-              </h2>
-              <p className="mt-2 leading-relaxed text-[var(--muted)]">
-                {project.description}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-xl bg-[var(--accent-soft)] px-3 py-1 text-xs font-semibold text-[var(--accent)]"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <ProjectsList projects={projects} />
     </div>
   );
 }
