@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Workshop Coordinator</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
+
+<style>
+  /* RESET */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f1a17;
+    color: #cfdad6;
+    line-height: 1.6;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 900px;
+    width: 100%;
+    background: #19322e;
+    border-radius: 24px;
+    padding: 50px 60px;
+    box-shadow: 0 6px 30px rgba(83, 111, 80, 0.7);
+  }
+
+  h3 {
+    font-weight: 900;
+    font-size: 3.6rem;
+    color: #d4ce46; /* gold accent */
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 45px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .content img {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 15px 30px rgba(155, 213, 195, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #0f1a17;
+  }
+
+  .content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px #9bd5c3;
+  }
+
+  .text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #a3b5a6;
+    padding: 28px 32px;
+    border-radius: 22px;
+    background: #0f1a17;
+    box-shadow: 0 0 26px rgba(155, 213, 195, 0.15);
+  }
+
+  .text p {
+    margin-bottom: 1.25em;
+  }
+
+  /* Divider */
+  .section-divider {
+    margin: 70px 0 20px;
+    height: 2px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      #9bd5c3,
+      transparent
+    );
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .container {
+      padding: 30px 25px;
+    }
+
+    h3 {
+      font-size: 2.8rem;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .text {
+      font-size: 1.05rem;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 30px 10px;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h3>Workshop Coordinator</h3>
+
+    <div class="content">
+
+      <div class="text">
+        <p>
+          This position has just started. I will be working with CodeCoogs to run workshops focused on 
+          both <strong>technical skills</strong> and <strong>professional development</strong>.
+        </p>
+
+        <p>
+          The goal is to help students strengthen their practical coding abilities while also 
+          preparing them for internships, research opportunities, and industry careers.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+  </div>
+
+</body>
+</html>

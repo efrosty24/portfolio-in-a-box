@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Magnetic Fields Modeling</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet"/>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+font-family:'Poppins',sans-serif;
+background:#0f1a17;
+color:#e6e6e6;
+line-height:1.6;
+padding:80px 20px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+.container{max-width:900px;width:100%;}
+h3{
+font-weight:900;
+font-size:3.8rem;
+color:#d4ce46;
+margin-bottom:50px;
+letter-spacing:2px;
+text-align:center;
+}
+.content{
+display:grid;
+grid-template-columns:1fr 1.4fr;
+gap:45px;
+align-items:center;
+margin-bottom:40px;
+width:100%;
+}
+.content img{
+width:100%;
+border-radius:22px;
+box-shadow:0 8px 18px rgba(212,206,70,.3);
+transition:.3s;
+}
+.content img:hover{
+transform:scale(1.05);
+box-shadow:0 12px 30px rgba(212,206,70,.6);
+}
+.text{font-size:1.15rem;line-height:1.7;color:#cfdad6;}
+.text p{margin-bottom:1.25em;}
+
+.github{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+font-size:1.25rem;
+border:2px solid #d4ce46;
+color:#d4ce46;
+text-decoration:none;
+border-radius:12px;
+font-weight:600;
+transition:.3s;
+}
+.github:hover{
+background:#d4ce46;
+color:#0f1a17;
+box-shadow:0 0 40px #d4ce46;
+transform:scale(1.05);
+}
+
+.tech-stack{margin:70px 0 10px;padding-top:35px;position:relative;width:100%;}
+.tech-stack::before{
+content:"";
+position:absolute;
+top:0;
+left:15%;
+width:70%;
+height:2px;
+background:linear-gradient(90deg,transparent,#9bd5c3,transparent);
+}
+.tech-icons{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
+gap:40px;
+align-items:center;
+justify-items:center;
+}
+.tech{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:12px;
+}
+.tech img{
+width:70px;
+height:70px;
+object-fit:contain;
+filter:drop-shadow(0 0 10px rgba(155,213,195,.6));
+transition:.3s;
+}
+.tech:hover img{
+transform:translateY(-6px) scale(1.08);
+filter:drop-shadow(0 0 18px rgba(155,213,195,.9));
+}
+.tech span{
+font-size:.95rem;
+color:#9bd5c3;
+letter-spacing:.6px;
+}
+
+.gallery{
+margin-top:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+width:100%;
+}
+.gallery img{
+width:100%;
+border-radius:22px;
+box-shadow:0 8px 18px rgba(212,206,70,.3);
+transition:.3s;
+}
+.gallery img:hover{
+transform:scale(1.05);
+box-shadow:0 12px 30px rgba(212,206,70,.6);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h3>Magnetic Fields Modeling</h3>
+
+<div class="content">
+<img src="../images/image.png" alt="Magnetic field simulation" />
+
+<div class="text">
+<p>
+Spent a summer working with <strong>Dr. Krista Soderlund</strong>,
+<strong>Dr. Chi Yan</strong>, and <strong>Dr. Dunyu Liu</strong> on
+numerically modeling magnetic fields around early Earth, Venus, and
+the Moon.
+</p>
+
+<p>
+Generated magnetic and kinetic energy fields, zonal flows, and entropy
+levels of early Earth using supercomputers and parallel computing.
+</p>
+
+<p>
+Successfully implemented and validated a radial electrical conductivity
+profile with a sharp gradient at the core–mantle boundary.
+</p>
+
+<p>
+Conducted extensive test cases analyzing magnetic surfaces, tilt,
+zonal flows, and kinetic/magnetic field behavior.
+</p>
+
+<a href="https://github.com/dunyuliu/magic.bmo.git"
+class="github"
+target="_blank"
+rel="noopener noreferrer">
+🔗 View GitHub Code
+</a>
+</div>
+</div>
+
+<div class="tech-stack">
+<div class="tech-icons">
+
+<div class="tech">
+<img src="../images/Fortran_logo.svg.png" alt="Fortran"/>
+<span>Fortran</span>
+</div>
+
+<div class="tech">
+<img src="../images/images.png" alt="MPI"/>
+<span>MPI</span>
+</div>
+
+<div class="tech">
+<img src="../images/images (5).jpg" alt="Python"/>
+<span>Python</span>
+</div>
+
+<div class="tech">
+<img src="../images/images (1).png" alt="Linux"/>
+<span>Linux / HPC</span>
+</div>
+
+<div class="tech">
+<img src="../images/images (2).png" alt="Supercomputing"/>
+<span>TACC</span>
+</div>
+
+</div>
+</div>
+
+<div class="gallery">
+<img src="../images/Img2.png" alt="Simulation result 1"/>
+<img src="../images/IMG3.png" alt="Simulation result 2"/>
+</div>
+
+</div>
+</body>
+</html>
