@@ -32,9 +32,14 @@ export default function AboutPage() {
             About Me
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-[var(--muted)]">
-            A short intro about you. You can describe your background, what you
-            do, and what you care about—similar to the clean, editorial style of
-            Bettina&apos;s portfolio.
+            Inspiring Software Developer at University of Houston looking for
+            internship opportunities for Summer 2025. With a passion for
+            crafting elegant solutions to complex problems, I specialize in
+            building scalable web applications using modern technologies. I
+            thrive in collaborative environments and am always eager to learn
+            and grow as a developer. When I&apos;m not coding, you can find me
+            exploring new tech trends, contributing to open-source projects, or
+            enjoying the vibrant Houston food scene.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <Link
